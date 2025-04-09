@@ -41,7 +41,7 @@ const CustomFormField: React.FC<CustomFormFieldProps> = ({
       name={name}
       render={({ field }) => (
         <FormItem className="mb-4">
-          <FormLabel className="text-auth-text font-medium">
+          <FormLabel className="text-[#222222] font-medium">
             {label}{required && <span className="text-red-500 ml-1">*</span>}
           </FormLabel>
           <FormControl>
@@ -49,14 +49,14 @@ const CustomFormField: React.FC<CustomFormFieldProps> = ({
               <Input
                 placeholder={placeholder}
                 type={isPasswordField && showPassword ? "text" : type}
-                className="bg-white border-auth-accent focus:border-auth-primary focus:ring-auth-primary/20 rounded-md p-2 h-10"
+                className="bg-white border-[#F2FCE2] focus:border-[#9b87f5] focus:ring-[#9b87f5]/20 rounded-md p-2 h-10"
                 {...field}
               />
               {isPasswordField && (
                 <button
                   type="button"
                   onClick={togglePasswordVisibility}
-                  className="absolute right-3 top-1/2 transform -translate-y-1/2 text-auth-muted hover:text-auth-text"
+                  className="absolute right-3 top-1/2 transform -translate-y-1/2 text-[#8E9196] hover:text-[#7E69AB]"
                 >
                   {showPassword ? <EyeOff size={18} /> : <Eye size={18} />}
                 </button>
